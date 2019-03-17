@@ -81,90 +81,95 @@ header .nav-item a:hover::after{
 .load-more span{
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*large devicea, wide screens*/
-
-@madia onli screen and (max-width: 1200px){
+.signup{
+    background-color: #f0f0f0;
+    padding: 70px 0;
+}
+.signup h3{
+    color: #333;
+}
+.signup form{
+    margin-top: 70px;
+}
+.signup .form-input{
+    position: relative;
+}
+.signup .form-control{
+    border: 0;
+    border-bottom: 1px solid #000000;
+    border-radius: 0px;
+    background-color: transparent;
+}
+.signup .form-control:focus{
+    box-shadow: none;
+}
+.form-input .btn{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size:25px ;
+}
+footer{
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    color: #000;
+}
+.footer-left a{
+    color: #000;
+    margin-right: 20px;
     
 }
-
-@madia onli screen and (max-width: 1199px){
-    
+.footer-right a{
+    margin-left:20px;
+    color: #626262;
 }
 
-@madia onli screen and (max-width: 992px){
-    
+
+
+@media only screen and (max-width: 1199px){
+  .grid-posts .card-img-top{
+    max-height: 300px;
+}
 }
 
-@madia onli screen and (max-width: 991px){
-    
+
+
+@media only screen and (max-width: 991px){
+    .grid-posts .card-img-top{
+    max-height: 220px;
+}
+    header .nav-item{
+        margin-left: 0;
+    }
 }
 
-/*medium devices, desktop*/
 
-@madia onli screen and (max-width: 992px){
-    
+
+@media only screen and (max-width: 767px){
+    .grid-posts .card-img-top{
+    max-height: 100%;
 }
-
-@madia onli screen and (max-width: 991px){
-    
+    .grid-posts {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .grid-posts .card{
+        margin-bottom: 50px;
+    }
+    .signup{
+    background-color: #f0f0f0;
+    padding: 50px 0;
 }
-
-/*small devices, tablets*/
-
-@madia onli screen and (max-width: 768px){
-    
-}
-
-@madia onli screen and (max-width: 767px){
-    
 }
 
 /*extra small devices, phones*/
 
-@madia onli screen and (max-width: 480px){
+@media only screen and (max-width: 575px){
+    .footer-left{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px){
     
 }
